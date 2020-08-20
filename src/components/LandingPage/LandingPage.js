@@ -8,14 +8,9 @@ import Settings from "../Settings";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const LandingPage = () => {
-  const StyledCon = styled.div`
-    height: 100vh;
-    background-color: ${colorPalete.background};
-  `;
-
   return (
     <Router>
-      <StyledCon>
+      <StyledDiv>
         <Navbar />
         <Switch>
           <Route path="/SignUp">
@@ -28,9 +23,14 @@ const LandingPage = () => {
             <Settings />
           </Route>
         </Switch>
-      </StyledCon>
+      </StyledDiv>
     </Router>
   );
 };
 
 export default LandingPage;
+
+const StyledDiv = styled.div`
+  height: 100vh;
+  background-color: ${colorPalete.background};
+`;
