@@ -4,15 +4,15 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
 const HomeIcon = () => {
-  const HomeIcon = styled(FontAwesomeIcon)`
-    font-size: 1.7em;
-  `;
-
   return (
     <a href="/">
-      <HomeIcon icon={faHome} />
+      <HomeIn icon={faHome} />
     </a>
   );
 };
 
 export default HomeIcon;
+
+const HomeIn = styled(FontAwesomeIcon)`
+  font-size: 1.7em;
+`;
